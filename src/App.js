@@ -5,7 +5,9 @@ import React, { Component } from 'react'
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import "./App.css";
 import "./leaflet.css"
-
+import Leaflet from 'leaflet'
+Leaflet.Icon.Default.imagePath =
+  '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/'
 
 type State = {
   lat: number,
