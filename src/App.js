@@ -30,8 +30,8 @@ export /*default*/ class Hydro extends Component<{}> {
   render() {
     //const position = [this.state.lat, this.state.lng]
 
-    //const position = [{this.props.coords.latitude}, {this.props.coords.longitude}]
-    const position = [52.1332, -106.6700]
+    const position = [{this.props.coords.latitude}, {this.props.coords.longitude}]
+    //const position = [52.1332, -106.6700]
     
     return (
 
