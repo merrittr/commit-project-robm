@@ -19,8 +19,8 @@ Leaflet.Icon.Default.imagePath =
 //   lng: number,
 //   zoom: number,
 // }
-
-export /*default*/ class Hydro extends Component<{}, State, GeolocatedProps> {
+//<{}, State & GeolocatedProps>
+export /*default*/ class Hydro extends Component<{}> {
   // state = {
   //   lat: 52.1332,
   //   lng: -106.6700,
@@ -29,6 +29,7 @@ export /*default*/ class Hydro extends Component<{}, State, GeolocatedProps> {
   
   render() {
     //const position = [this.state.lat, this.state.lng]
+
     //const position = [{this.props.coords.latitude}, {this.props.coords.longitude}]
     const position = [52.1332, -106.6700]
     
