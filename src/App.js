@@ -88,7 +88,7 @@ export class Hydro extends Component<{}> {
        
       {hydroData.features.map(hydat => (
        <Marker 
-       icon={myIconDrop}
+       /*icon={myIconDrop}*/
        key={hydat.properties.STATION_ID} 
        position={[
          hydat.geometry.coordinates[1],
@@ -96,7 +96,6 @@ export class Hydro extends Component<{}> {
        ]}
        />
       ))}
-
       </Map>
     )
   }
