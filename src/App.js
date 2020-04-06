@@ -2,7 +2,7 @@
 // @flow
 
 import React, { Component } from 'react'
-import { Icon } from "leaflet";
+//import { Icon } from "leaflet";
 import Leaflet from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import * as hydroData from "./data/hydrometric.json";
@@ -42,8 +42,8 @@ export class Hydro extends Component<{}> {
 
     const myIconDrop = Leaflet.icon({
     iconUrl: require('./images/drop.svg'),
-    iconSize: [64,64],
-    iconAnchor: [32, 64],
+    iconSize: [10,10],
+    iconAnchor: [10,10],//[32, 64],
     popupAnchor: null,
     shadowUrl: null,
     shadowSize: null,
@@ -53,8 +53,8 @@ export class Hydro extends Component<{}> {
 
     const myIconMarker = Leaflet.icon({
     iconUrl: require('./images/markerRed.svg'),
-    iconSize: [64,64],
-    iconAnchor: [32, 64],
+    iconSize: [10,10],
+    iconAnchor: [10,10],//[32, 64],
     popupAnchor: null,
     shadowUrl: null,
     shadowSize: null,
@@ -85,6 +85,18 @@ export class Hydro extends Component<{}> {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
+       
+      {hydroData.features.map(hydat => (
+       <Marker 
+       icon={myIconDrop}
+       key={hydat.properties.STATION_ID} 
+       position={[
+         hydat.geometry.coordinates[1],
+         hydat.geometry.coordinates[0]
+       ]}
+       />
+      ))}
+
       </Map>
     )
   }
