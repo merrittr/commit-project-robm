@@ -8,22 +8,21 @@
     {
       "type": "Feature",
       "properties": {
-        "PARK_ID": "05AH050",
+        "STATION_ID": "05AH050",
         "FACILITYID": "05AH050",
-        "NAME": "BOXELDER CREEK AT HARGRAVE S RANCH",
+        "NAME": "BOXELDER CREEK AT HARGRAVE S RANCH"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [50.01198, -109.98701]
       }
     },
-	"features": [
     {
       "type": "Feature",
       "properties": {
-        "PARK_ID": "05EF001",
+        "STATION_ID": "05EF001",
         "FACILITYID": "05EF001",
-        "NAME": "NORTH SASKATCHEWAN RIVER NEAR DEER CREEK",
+        "NAME": "NORTH SASKATCHEWAN RIVER NEAR DEER CREEK"
       },
       "geometry": {
         "type": "Point",
