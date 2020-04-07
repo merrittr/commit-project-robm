@@ -80,7 +80,7 @@ export class Hydro extends Component<{}> {
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker icon={myIconDrop} position={[52.1332, -106.6700]}>
+        <Marker icon={myIconMarker} position={[52.1332, -106.6700]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
