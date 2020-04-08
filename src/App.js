@@ -73,12 +73,25 @@ export class Hydro extends Component<{}> {
             You are here. <br /> Ya you.
           </Popup>
         </Marker>
+
+
+      {hydroData.features.map(hydat => (
+       <Marker 
+       icon={myIconDrop}
+       key={hydat.properties.STATION_ID} 
+       position={[
+         hydat.geometry.coordinates[0],
+         hydat.geometry.coordinates[1]
+       ]}
+       
+       />
+      ))}
       </Map>) 
       :
-      <Map center={[52.1332, -106.6700]} zoom={5}>
+      (<Map center={[52.1332, -106.6700]} zoom={5}>
         <TileLayer
-          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
         <Marker icon={myIconMarker} position={[52.1332, -106.6700]}>
           <Popup>
@@ -97,7 +110,7 @@ export class Hydro extends Component<{}> {
        
        />
       ))}
-      </Map>
+      </Map>)
     )
   }
 }
