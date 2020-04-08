@@ -85,7 +85,7 @@ export class Hydro extends Component<{}> {
        ]}
        >
       <Popup>
-        <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Hydrometric station <br /> {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME}</a> 
+        <a href={"https://merrittr.shinyapps.io/hydroshiny/?y=waterlevel&z=" + hydat.properties.STATION_ID} rel="noopener noreferrer" target="_blank">Hydrometric station <br /> {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME}</a> 
        </Popup>
       </Marker>
       ))}
@@ -112,7 +112,7 @@ export class Hydro extends Component<{}> {
        ]}
        >
           <Popup>
-          <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Hydrometric station <br /> {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME}</a> 
+          <a href={"https://merrittr.shinyapps.io/hydroshiny/?y=waterlevel&z=" + hydat.properties.STATION_ID} rel="noopener noreferrer" target="_blank">Hydrometric station <br /> {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME}</a> 
           </Popup>
       </Marker>
       ))}
