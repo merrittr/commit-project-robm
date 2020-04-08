@@ -28,6 +28,18 @@
         "type": "Point",
         "coordinates": [53.52319, -109.61789]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "STATION_ID": "07QC005",
+        "FACILITYID": "07QC005",
+        "NAME": "ABITAU RIVER ABOVE CUMING LAKE (SK)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [59.99944, -108.77408]
+      }
     }
   ]
 }
