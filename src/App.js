@@ -84,8 +84,8 @@ export class Hydro extends Component<{}> {
          hydat.geometry.coordinates[1]
        ]}
        >
-       <Popup>
-        Hydrometridc station <br /> Duh!
+      <Popup>
+        <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Hydrometric station <br /> {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME}</a> 
        </Popup>
       </Marker>
       ))}
@@ -112,7 +112,7 @@ export class Hydro extends Component<{}> {
        ]}
        >
           <Popup>
-            Hydrometridc station <br /> Duh!
+          <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Hydrometric station <br /> {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME}</a> 
           </Popup>
       </Marker>
       ))}
