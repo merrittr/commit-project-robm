@@ -77,14 +77,17 @@ export class Hydro extends Component<{}> {
 
       {hydroData.features.map(hydat => (
        <Marker 
-       icon={myIconDrop}
+       /*icon={myIconDrop}*/
        key={hydat.properties.STATION_ID} 
        position={[
          hydat.geometry.coordinates[0],
          hydat.geometry.coordinates[1]
        ]}
-       
-       />
+       >
+       <Popup>
+        Hydrometridc station <br /> Duh!
+       </Popup>
+      </Marker>
       ))}
       </Map>) 
       :
@@ -93,22 +96,25 @@ export class Hydro extends Component<{}> {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker icon={myIconMarker} position={[52.1332, -106.6700]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
+      <Marker icon={myIconMarker} position={[52.1332, -106.6700]}>
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
        
       {hydroData.features.map(hydat => (
        <Marker 
-       icon={myIconDrop}
+       /*icon={myIconDrop}*/
        key={hydat.properties.STATION_ID} 
        position={[
          hydat.geometry.coordinates[0],
          hydat.geometry.coordinates[1]
        ]}
-       
-       />
+       >
+          <Popup>
+            Hydrometridc station <br /> Duh!
+          </Popup>
+      </Marker>
       ))}
       </Map>)
     )
