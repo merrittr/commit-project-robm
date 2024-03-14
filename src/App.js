@@ -66,7 +66,7 @@ export class Hydro extends Component<{}> {
       ? (<Map center={[this.props.coords.latitude, this.props.coords.longitude]} zoom={5}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker icon={myIconMarker} position={[this.props.coords.latitude, this.props.coords.longitude]}>
           <Popup>
@@ -85,7 +85,9 @@ export class Hydro extends Component<{}> {
        ]}
        >
       <Popup>
-        <a href={"https://merrittr.shinyapps.io/hydroshiny/?y=waterlevel&z=" + hydat.properties.STATION_ID} rel="noopener noreferrer" target="_blank">Hydrometric station <br /> {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME}</a> 
+      {hydat.properties.STATION_ID} <br /> {hydat.properties.NAME} <br />
+        <a href={"https://merrittr.shinyapps.io/hydroshiny/?y=waterlevel&z=" + hydat.properties.STATION_ID} rel="noopener noreferrer" target="_blank">Water Level (m)</a> <br />
+        <a href={"https://merrittr.shinyapps.io/hydroshiny/?y=DischargeDebit&z=" + hydat.properties.STATION_ID} rel="noopener noreferrer" target="_blank">Discharge (cms)</a>
        </Popup>
       </Marker>
       ))}
@@ -93,7 +95,7 @@ export class Hydro extends Component<{}> {
       :
       (<Map center={[52.1332, -106.6700]} zoom={5}>
         <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
       <Marker icon={myIconMarker} position={[52.1332, -106.6700]}>
