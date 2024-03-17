@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "STATION_ID": "05AH050",
+        "FACILITYID": "05AH050",
+        "NAME": "BOXELDER CREEK AT HARGRAVE S RANCH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [50.01198, -109.98701]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "STATION_ID": "05EF001",
+        "FACILITYID": "05EF001",
+        "NAME": "NORTH SASKATCHEWAN RIVER NEAR DEER CREEK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [53.52319, -109.61789]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "STATION_ID": "07QC005",
+        "FACILITYID": "07QC005",
+        "NAME": "ABITAU RIVER ABOVE CUMING LAKE (SK)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [59.99944,  -108.77408]
+      }
+    }
+  ]
+}
